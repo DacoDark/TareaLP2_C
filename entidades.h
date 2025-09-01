@@ -15,5 +15,6 @@ struct Juego; /* forward-declaration para punteros a funcion (armas) */
 
 void mover_aliens(struct Juego *juego);
 void resolver_danos(struct Juego *juego);
+void mover_jugador(struct Juego *juego, int direccion_x);
 
 #endif // ENTIDADES_H
