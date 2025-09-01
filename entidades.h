@@ -1,3 +1,6 @@
+#ifndef ENTIDADES_H
+#define ENTIDADES_H
+
 typedef struct {
 int tipo; /* tipo de alien */
 int hp; /* vida actual */
@@ -9,5 +12,8 @@ Alien *alien; /* NULL si la celda esta vacia */
 int dano_pend; /* danio marcado a consolidar */
 } Celda;
 struct Juego; /* forward-declaration para punteros a funcion (armas) */
+
 void mover_aliens(struct Juego *juego);
 void resolver_danos(struct Juego *juego);
+
+#endif // ENTIDADES_H
